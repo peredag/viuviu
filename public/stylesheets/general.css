@@ -1,0 +1,12 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+ }
+ 
+
+ body {
+    font-family: var(--font-roboto); 
+    background-color: var(--light-grey);
+ }
+

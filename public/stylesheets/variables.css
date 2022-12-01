@@ -1,0 +1,16 @@
+/* variables */
+:root {
+    /* Colors */
+    --drak-orange: #E14D2A;
+    --orange: #FD841F;
+    --light_blue: #3E6D9C;
+    --blue: #001253;
+   
+    /* Font */
+    --font-roboto: "Roboto", sans-serif;
+    /* Font sizes */
+    --paragraph : 12px;
+    --title: 24px;
+    --prices: 18px;
+    --discounts-descriptions: 16px;
+ }
