@@ -1,0 +1,47 @@
+.carousel2 {
+    background: #FAFAFA;
+  }
+  
+  .carousel-cell {
+    width: 40%;
+    height: 245px;
+    margin-right: 5px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+  }
+  
+  /* cell number */
+/*   .carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  } */
+
+
+
+@media screen and (min-width: 768px) {
+    .carousel-cell {
+        width: 35%;
+        height: 245px;
+        /* margin-right: 5px;
+        background: #8C8;
+        border-radius: 5px;
+        counter-increment: carousel-cell; */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .carousel-cell {
+        width: 20%;
+        height: 245px;
+        /* margin-right: 5px;
+        background: #8C8;
+        border-radius: 5px;
+        counter-increment: carousel-cell; */
+    }
+
+}

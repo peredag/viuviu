@@ -88,20 +88,20 @@
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
+  /* cursor: pointer; */
+  /* height: 15px; */
+  /* width: 15px; */
+ /*  margin: 0 2px; */
+  /* background-color: #bbb; */
+ /*  border-radius: 50%; */
   /* display: inline-block; */
-  display: none;
-  transition: background-color 0.6s ease;
+  /* display: none; */
+  /* transition: background-color 0.6s ease; */
 }
 
-.active, .dot:hover {
+/* .active, .dot:hover {
   background-color: #717171;
-}
+} */
 
 /* Fading animation */
 .fade {
