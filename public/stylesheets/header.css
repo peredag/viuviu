@@ -26,8 +26,9 @@ header {
     height: fit-content;  
     height: -moz-fit-content; 
     min-height: 75px; 
-    padding: 10px 15px; 
+    padding: 2px 15px; 
     width: 100%; 
+    /* background-color:blue */
 }
 
 .main-header .burguer-menu-icon {
@@ -101,16 +102,21 @@ i.fa-search {
     order: 4;
     padding: 15px;
     width: 100%;
+
 }
 
 .main-header .navigation-bar ul.menu li {
     padding: 10px 0;
     cursor: pointer;
     transition: color .5s ease;
+    /* background-color: red; */
+    list-style: none;
 }
 
 .main-header .navigation-bar ul.menu li:hover {
     color: var(--primary);
+    /* background-color: red; */
+    list-style: none;
 }
 
 .main-header .navigation-bar .user-icons-mobile {
@@ -152,6 +158,9 @@ i.fa-search {
 
 .subcategory_menu ul {
     padding: 15px;
+   /*  background-color: red; */
+    list-style: none;
+    
 }
 
 .header-opacity {
@@ -187,6 +196,7 @@ i.fa-search {
     .main-header {
         height: 100px;
         padding: 10px 30px;
+        
     }
 
     .main-header {
@@ -204,6 +214,8 @@ i.fa-search {
         align-items: center;
         flex-grow: 1;
         justify-content: space-around;
+        /* background-color: red; */
+        list-style: none;
     }
 
         
