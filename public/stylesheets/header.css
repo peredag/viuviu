@@ -109,14 +109,20 @@ i.fa-search {
     padding: 10px 0;
     cursor: pointer;
     transition: color .5s ease;
-    /* background-color: red; */
+    
     list-style: none;
+    text-decoration: none;
 }
-
+.main-header .navigation-bar ul.menu li a {
+   /*  background-color: red; */
+    text-decoration: none;
+    color: black;
+}
 .main-header .navigation-bar ul.menu li:hover {
     color: var(--primary);
     /* background-color: red; */
     list-style: none;
+    
 }
 
 .main-header .navigation-bar .user-icons-mobile {
@@ -135,6 +141,7 @@ i.fa-search {
 .nav_menu {
     font-family: var(--font_poppins);
     font-size: 1rem;
+    
 }
 
 
@@ -143,12 +150,14 @@ i.fa-search {
     background-color: white;
     position: fixed;
     width: 100%;
+  
 }
 
 .subcategory_menu .subcategory_header {
     display: flex;
     justify-content: space-between;
     padding: 15px;
+    
 }
 
 .subcategory_menu .subcategory_header img {
@@ -160,6 +169,7 @@ i.fa-search {
     padding: 15px;
    /*  background-color: red; */
     list-style: none;
+   
     
 }
 

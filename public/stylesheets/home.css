@@ -8,11 +8,15 @@
 }
 :root {
   /* Colors */
-  --orange: #FD841F;
-
+  --drak-navy: #453C67;
+  --purple: #6D67E4;
+  --light_blue: #46C2CB;
+  --yellow: #F2F7A1;
+  /* Colors */
+/*   --orange: #FD841F;
   --dark-grey: #666;
   --light-grey: #ebebeb;
-  --green: #39b54a;
+  --green: #39b54a; */
   /* Font */
   --font-roboto: "Roboto", sans-serif;
   /* Font sizes */
@@ -114,6 +118,43 @@
   to {opacity: 1}
 }
 
+/* category-cards */
+.title{
+ font-size: 20px;
+ color: var(--drak-navy);
+ text-align: center;
+ text-transform: capitalize;
+ padding-top: 20px;
+}
+
+.categories-section {
+  width: 100%;
+  padding: 10px;
+}
+
+.home-categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.category-card {
+  width: 100%;
+  border-radius: 20px;
+  margin: 5px 0;
+  transition: all 1s ease;
+  box-shadow: 0 0 5px var(--primary);
+}
+
+.category-card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--primary);
+}
+
+.category-card img{
+  width: 100%;
+  border-radius: 20px;
+}
 
 /* cards */
 .container {
@@ -129,7 +170,7 @@
   height: 245px; 
   display: flex; 
   transition: all 0.5s ease-in-out;
-  background-color: var(--yellow);
+ /*  background-color: var(--yellow); */
   position: relative;
   border-radius: 10px;
 }
@@ -144,7 +185,7 @@
 .card .card-image {
   height: 150px; 
   margin: 1px;
-  background-color: orangered;
+ /*  background-color: orangered; */
 }
 
 .card .card-image img { 
@@ -156,7 +197,7 @@
 .card .card-data{
   margin: 1px;
   padding: 5px;
-  border-top: solid 2px var(--orange);
+  border-top: solid 2px var(--purple);
 }
 
 .card .card-data .price{
@@ -167,8 +208,8 @@
 }
 
 .card .card-data .icon{
-  color: var(--orange);
-  border: 1px solid var(--orange);
+  color: var(--purple);
+  border: 1px solid var(--purple);
   background-color: white;
   border-radius: 50%;
   width: fit-content; 
@@ -184,7 +225,7 @@
   top: 3px;
   right: 3px;
   border-radius: 5px;
-  background-color: var(--orange);
+  background-color: var(--purple);
   color: white;
   font-weight: 800;
   font-size: 13px;
@@ -206,6 +247,19 @@
 
 
 @media screen and (min-width: 768px) {
+  .categories-section {
+    padding: 10px 40px;
+  }
+  .home-categories {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
+
+  .category-card {
+      width: 30%;
+  }
+
 
 }
 

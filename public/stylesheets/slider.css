@@ -1,12 +1,102 @@
+/* cards */
+.container2 {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.container2 .card2{
+  width: 150px; 
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); 
+  height: 245px; 
+  display: flex; 
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  border-radius: 10px;
+}
+
+.card2 {
+  display: flex; 
+  flex-direction: column;
+  margin: 2px; 
+  padding: 2px;
+}
+
+.card2 .card-image2 {
+  height: 230px; 
+  margin: 1px;
+ /*  background-color: orangered; */
+}
+
+.card2 .card-image2 img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.card2 .card-data2{
+  margin: 1px;
+  padding: 5px;
+  border-top: solid 2px var(--purple);
+}
+
+.card2 .card-data2 .price2{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 15px;
+
+}
+
+.card2 .card-data2 .icon2{
+  color: var(--purple);
+  border: 1px solid var(--purple);
+  background-color: white;
+  border-radius: 50%;
+  width: fit-content; 
+  padding: 5px;
+  position: absolute;
+  top: 220px;
+  right: 3px;
+  font-size: 14px;
+}
+
+.card2 .card-data2 .price2 .discount2 {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  border-radius: 5px;
+  background-color: var(--purple);
+  color: white;
+  font-weight: 800;
+  font-size: 13px;
+  margin: 4px;
+  padding: 0 6px;
+}
+
+.card2 .card-data2 .name2 {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.card2 .card-data2 .quotes2{
+  font-size: 10px;
+}
+
+
+
+
 .carousel2 {
     background: #FAFAFA;
+  /*   background-color: red; */
+    padding: 10px;
   }
   
   .carousel-cell {
-    width: 40%;
-    height: 245px;
+    width: 200px;
+    height: 330px;
     margin-right: 5px;
-    background: #8C8;
+   /*  background: #8C8; */
     border-radius: 5px;
     counter-increment: carousel-cell;
   }
@@ -26,7 +116,7 @@
 @media screen and (min-width: 768px) {
     .carousel-cell {
         width: 35%;
-        height: 245px;
+        height: 330px;
         /* margin-right: 5px;
         background: #8C8;
         border-radius: 5px;
@@ -37,7 +127,7 @@
 @media screen and (min-width: 1024px) {
     .carousel-cell {
         width: 20%;
-        height: 245px;
+        height: 330px;
         /* margin-right: 5px;
         background: #8C8;
         border-radius: 5px;
