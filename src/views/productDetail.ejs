@@ -1,167 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-            crossorigin="anonymous" />
-    <title>Document</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="/stylesheets/style.css">
-   <!--  <link rel="stylesheet" href="/stylesheets/header.css"> -->
-    <!-- <link rel="stylesheet" href="/stylesheets/productdetail.css"> -->
-</head>
-
+<%- include('partials/head.ejs') %>
 
 <body>
-        <header>
-            <div class="main-header">
-
-                <div class="logo">
-                    <a href="/">
-                        <img src="/images/logo.png" alt="">
-                    </a>
-                </div>
-
-                <i class="fas fa-bars burguer-menu-icon" onclick="dropMenu()"></i>
-
-                <!-- Menú de navegación mobile -->
-                <nav class="navigation-bar" id="navigation-bar-mobile">
-
-                    <div class="user-icons-mobile">
-                        <i class="fas fa-user"></i>
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-
-                    <!-- Lista con los elementos del menú (categorías) -->
-                    <ul class="menu">
-                        <li class="dropdown-menu" onclick="dropSubCategoryMenu(`school`)">
-                            Escolar
-                            <i class="fas fa-chevron-down"></i>
-                        </li>
-                        <li class="dropdown-menu" onclick="dropSubCategoryMenu(`art`)">
-                            Artística
-                            <i class="fas fa-chevron-down"></i>
-                        </li>
-                        <li class="dropdown-menu" onclick="dropSubCategoryMenu(`office`)">
-                            Oficina
-                            <i class="fas fa-chevron-down"></i>
-                        </li>
-                        <li><a href="">Contacto</a></li>
-                    </ul>
-                </nav>
-
-                <!-- Menú de navegación desktop -->
-                <nav class="navigation-bar" id="navigation-bar-desktop">
-
-                    <!-- Lista con los elementos del menú (categorías) -->
-                    <ul class="menu">
-                        <li class="dropdown-menu" onclick="dropSubCategoryMenu(`school`)">
-                            Escolar
-                            <i class="fas fa-chevron-down"></i>
-                        </li>
-                        <li class="dropdown-menu" onclick="dropSubCategoryMenu(`art`)">
-                            Artística
-                            <i class="fas fa-chevron-down"></i>
-                        </li>
-                        <li class="dropdown-menu" onclick="dropSubCategoryMenu(`office`)">
-                            Oficina
-                            <i class="fas fa-chevron-down"></i>
-                        </li>
-                        <li><a href="">Contacto</a></li>
-                    </ul>
-                </nav>
-
-                <!-- Icono del buscador en header mobile -->
-                <div class="search-icon" onclick="dropSearch()">
-                    <i class="fas fa-search"></i>
-                </div>
-
-                <!-- Buscador escritorio -->
-
-                <form action="" class="search-form-desktop">
-                    <!-- buscador va dentro de FORM para enviar informacion -->
-                    <div class="search-bar">
-                        <input type="search" name="" id="">
-                        <button type="submit"><i class="fas fa-search"></i></button>
-                    </div>
-                </form>
-
-                <!-- Iconos de usuario escritorio -->
-                <div class="user-icons-desktop">
-                    <i class="fas fa-user"></i>
-                    <i class="fas fa-shopping-cart"></i>
-                </div>
-
-            </div>
-            <nav class="nav_menu">
-
-                <!-- Buscador Mobile -->
-
-                <form action="" class="search-form-mobile" id="search">
-                    <div class="search-bar">
-                        <input type="search" name="" id="" placeholder="Buscar productos">
-                        <button type="submit"><i class="fas fa-search"></i></button>
-                    </div>
-                </form>
-
-                <!-- Subcategorias desplegables -->
-
-                <div class="subcategory_menu" id="school">
-                    <div class="subcategory_header">
-                        <h3><a href="">ESCOLAR</a></h3>
-                        <img src="/images/close.png" alt="" onclick="closeWindow()">
-                    </div>
-                    <ul>
-                        <li><a href="">Subcategoria</a></li>
-                        <li><a href="">Subcategoria</a></li>
-                        <li><a href="">Subcategoria</a></li>
-                    </ul>
-                </div>
-
-                <div class="subcategory_menu" id="art">
-                    <div class="subcategory_header">
-                        <h3><a href="">ARTÍSTICA</a></h3>
-                        <img src="/images/close.png" alt="" onclick="closeWindow()">
-                    </div>
-                    <ul>
-                        <li><a href="">Subcategoria</a></li>
-                        <li><a href="">Subcategoria</a></li>
-                        <li><a href="">Subcategoria</a></li>
-                    </ul>
-                </div>
-
-                <div class="subcategory_menu" id="office">
-                    <div class="subcategory_header">
-                        <h3><a href="">OFICINA</a></h3>
-                        <img src="/images/close.png" alt="" onclick="closeWindow()">
-                    </div>
-                    <ul>
-                        <li><a href="">Subcategoria</a></li>
-                        <li><a href="">Subcategoria</a></li>
-                        <li><a href="">Subcategoria</a></li>
-                    </ul>
-                </div>
-
-
-            </nav>
-
-        </header>
+    <%- include('partials/header.ejs') %>
 
         <main class="productDetail-container">
             <section class="productDetail">
                 <div class="images-container">
-                    <div class="thumbnailImages">
+<!--                     <div class="thumbnailImages">
                         <img src="/images/cuaderno-con-espiral.jpg" alt="Imagen de producto" onclick="myFunction(this);">
-                        <img src="/images/compas.jpg" alt="Imagen de producto" onclick="myFunction(this);">
-                        <img src="/images/cuadernos.jpg" alt="Imagen de producto" onclick="myFunction(this);">
-                    </div>
+                        <img src="/images/microfibras.jpg" alt="Imagen de producto" onclick="myFunction(this);">
+                        <img src="/images/resaltador.jpg" alt="Imagen de producto" onclick="myFunction(this);">
+                    </div> -->
                     <div class="mainImage">
                         <img src="/images/cuaderno-con-espiral.jpg" alt="Imagen de producto" id="expandedImg">
+                    </div>
+                    <div class="thumbnailImages">
+                        <img src="/images/cuaderno-con-espiral.jpg" alt="Imagen de producto" onclick="myFunction(this);">
+                        <img src="/images/microfibras.jpg" alt="Imagen de producto" onclick="myFunction(this);">
+                        <img src="/images/resaltador.jpg" alt="Imagen de producto" onclick="myFunction(this);">
                     </div>
                 </div>
                 <div class="productData-container">
@@ -196,7 +54,7 @@
                     <h5>Descripción del producto</h5>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae repellendus, a dignissimos quasi temporibus cumque minus. Optio similique cum praesentium eos iure? Obcaecati explicabo, optio consectetur nam voluptatum delectus voluptatem.</p>
                 </div>
-                <div class="comments">
+                <!-- <div class="comments">
                     <h5>Opiniones</h5>
                     <div class="comment">
                         <div class="stars">
@@ -204,26 +62,18 @@
                         </div>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor sunt aliquid illo qui amet pariatur?</p>
                     </div>
-                </div>
+                </div> -->
             </section>
     
      
         </main>
 
-
-       
-        
+        <%- include('partials/footer.ejs') %>
 
         <script src="/javascripts/header.js"></script>
-        <script src="/javascripts/carousel.js"></script>
         <script src="/javascripts/productDetail.js"></script>
         <script src="/javascripts/productDetail.js"></script>
-
-        <!-- JavaScript -->
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
-
-
 
 </body>
 

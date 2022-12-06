@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head.ejs') %>
+<body>
+    <%- include('partials/header.ejs') %>
+
+    <h3 class="title">categorías destacadas</h3>
+
+    <section class="categories-section">
+        <div class="home-categories">
+            <div class="category-card">
+                <a href="/products/category/1"><img src="/images/categ-escolar.png" alt=""></a>
+            </div>
+            <div class="category-card">
+                <a href="/products/category/2"><img src="/images/categ-oficina.png" alt=""></a>
+            </div>
+            <div class="category-card">
+                <a href="/products/category/3"><img src="/images/categ-artistica.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <h3 class="title">Listado de todos los productos</h3>
+    <%- include('partials/cards.ejs') %>
+
+
+    <%- include('partials/footer.ejs') %>
+
+    <!-- JavaScript -->
+    <script src="/javascripts/header.js"></script>
+    <script src="/javascripts/carousel.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>

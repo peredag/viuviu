@@ -3,7 +3,13 @@ let controller = {
         res.render('productDetail', {
             
         })
-    }
+    },
+    list: (req, res) =>{
+        res.render('productList', {
+            
+        })
+    },
+
 
 }
 

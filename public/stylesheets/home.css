@@ -216,7 +216,7 @@
   padding: 5px;
   position: absolute;
   top: 135px;
-  right: 3px;
+  right: 1px; /* 3px */
   font-size: 14px;
 }
 

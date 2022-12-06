@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('partials/head.ejs') %>
+
+<body>
+    <%- include('partials/header.ejs') %>
+
+    <main class="usersForm-container">
+       
+        <h3 class="userTitle">LOGIN</h3>
+        <form action="/users/login" method="POST" class="form-ad">
+            <div class="form-ad-input">
+                <input type="email" name="email" placeholder="Ingresá tu email">
+                    <small class="text-danger">Ingresa un email válido </small>
+                
+            </div>
+            <div class="form-ad-input">
+                <input type="password" name="pass" placeholder="Contraseña">
+                <small class="text-danger">Ingresa tu contraseña</small>
+            </div>
+            <div class="form-ad-input_check">
+                <input type="checkbox" name="remember" id="check">
+                <label for="check">Recordar</label>
+            </div>
+            <small class="text-danger">Credenciales inválidas</small>
+            <button type="submit" class="btn btn-ad-primary">
+                INGRESAR
+            </button>
+            <a href="/users/register" class="userLink">Aún no tengo cuenta</a>
+        </form>
+    </main>
+
+    <%- include('partials/footer.ejs') %>
+
+    <script src="/javascripts/header.js"></script>
+</body>
+
+</html>
