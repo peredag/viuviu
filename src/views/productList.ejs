@@ -21,7 +21,56 @@
     </section>
 
     <h3 class="title">Listado de todos los productos</h3>
-    <%- include('partials/cards.ejs') %>
+    <section class="container">
+        <% products.forEach(element => { %>
+            <article class="card">
+                <a href="/products/detail/<%- element.id %> ">
+                    <div class="card-image">
+                        <img src="/images/<%- element.image  %> " alt="">
+                    </div>
+                </a>
+                <div class="card-data">
+                    <div class="icon">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h5 class="name">
+                        <% if (element.name.length > 30) { %>
+                            <%- `${element.name.slice(0,30)}...` %>
+                        <% } else { %>
+                            <%= element.name %>
+                        <% } %>
+                    </h5>
+                    <div class="price">
+                        <p>$<%- toThousand(element.price - element.price * element.discount / 100) %></p>
+                        <p class="discount"><%- element.discount !== 0 ? `${element.discount}% OFF` : "" %></p>
+                    </div>
+                    <!-- <p class="quotes">6 cuotas de $660,00</p> -->
+                </div>
+            </article>
+        <% }) %>
+    
+        <!-- <article class="card">
+            <a href="/products/detail">
+                <div class="card-image">
+                    <img src="/images/microfibras.jpg" alt="">
+                </div>
+            </a>
+            <div class="card-data">
+                <div class="icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <h5 class="name">Aquí va el nombre del producto etc etc etc...</h5>
+                <div class="price">
+                    <p>$3960</p>
+                    <p class="discount">30% off</p>
+                </div>
+                <p class="quotes">6 cuotas de $660,00</p>
+            </div>
+        </article> -->
+        <!-- card -->
+    
+    </section>
+    
 
 
     <%- include('partials/footer.ejs') %>

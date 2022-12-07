@@ -1,0 +1,124 @@
+[
+  {
+    "id": 1,
+    "name": "Cuaderno con Espiral Tapa Dura A5 x86Hjs PUNTEADAS Paperland",
+    "price": 360,
+    "discount": 0,
+    "category": 1,
+    "subcategory": "cuadernos",
+    "image": ["cuaderno-con-espiral.jpg"],
+    "description": "Te presentamos un práctico y moderno anotador de 96 hojas (80 Grs.) para organizar tu día, liberar tu creatividad o simplemente por diversión."
+  },
+  {
+    "id": 2,
+    "name": "40 microfibras Point 88 Stabilo + canopla sin cargo!",
+    "price": 16000,
+    "discount": 0,
+    "category": 1,
+    "subcategory": "fibras",
+    "image": ["microfibras.jpg"],
+    "description": "¡Super promo 40 microfibras Stabilo Point 88 + canopla Talbot sin cargo!"
+  },
+  {
+    "id": 3,
+    "name": "Valija Escolar Faber-Castell",
+    "price": 12600,
+    "discount": 10,
+    "category": 1,
+    "subcategory": "fibras",
+    "image": ["valija-escolar.jpg"],
+    "description": "El Set Escolar Faber-Castell trae consigo 10 útiles distintos entre sí y un total de 33 piezas diferentes.Resulta ideal para que los más pequeños puedan imaginar y crear libremente."
+  },
+  {
+    "id": 4,
+    "name": "Mouse Óptico USB",
+    "price": 1600,
+    "discount": 5,
+    "category": 1,
+    "subcategory": "computacion",
+    "image": ["mouse.jpg"],
+    "description": "Diseño ergonómico, confortable, pequeño y fácil de transportar. Tamaño: 105.6x58x36.7 mm."
+  },
+  {
+    "id": 5,
+    "name": "Set Resaltador Boss x5 unidades surtidas Stabilo",
+    "price": 2600,
+    "discount": 10,
+    "category": 1,
+    "subcategory": "fibras",
+    "image": ["resaltador.jpg"],
+    "description": "Diseño compacto, elegante y ergonómico. Imprescindibles para todo momento."
+  },
+  {
+    "id": 6,
+    "name": "Set Resaltador Boss x5 unidades surtidas Stabilo",
+    "price": 2600,
+    "discount": 5,
+    "category": 1,
+    "subcategory": "fibras",
+    "image": ["resaltador.jpg"],
+    "description": "Diseño compacto, elegante y ergonómico. Imprescindibles para todo momento."
+  },
+  {
+    "id": 1,
+    "name": "Cuaderno con Espiral Tapa Dura A5 x86Hjs PUNTEADAS Paperland",
+    "price": 360,
+    "discount": 10,
+    "category": 1,
+    "subcategory": "cuadernos",
+    "image": ["cuaderno-con-espiral.jpg"],
+    "description": "Te presentamos un práctico y moderno anotador de 96 hojas (80 Grs.) para organizar tu día, liberar tu creatividad o simplemente por diversión."
+  },
+  {
+    "id": 2,
+    "name": "40 microfibras Point 88 Stabilo + canopla sin cargo!",
+    "price": 16000,
+    "discount": 5,
+    "category": 1,
+    "subcategory": "fibras",
+    "image": ["microfibras.jpg"],
+    "description": "¡Super promo 40 microfibras Stabilo Point 88 + canopla Talbot sin cargo!"
+  },
+  {
+    "id": 3,
+    "name": "Valija Escolar Faber-Castell",
+    "price": 12600,
+    "discount": 10,
+    "category": 1,
+    "subcategory": "fibras",
+    "image": ["valija-escolar.jpg"],
+    "description": "El Set Escolar Faber-Castell trae consigo 10 útiles distintos entre sí y un total de 33 piezas diferentes.Resulta ideal para que los más pequeños puedan imaginar y crear libremente."
+  },
+  {
+    "id": 4,
+    "name": "Mouse Óptico USB",
+    "price": 1600,
+    "discount": 5,
+    "category": 1,
+    "subcategory": "computacion",
+    "image": ["mouse.jpg"],
+    "description": "Diseño ergonómico, confortable, pequeño y fácil de transportar. Tamaño: 105.6x58x36.7 mm."
+  },
+  {
+    "id": 5,
+    "name": "Set Resaltador Boss x5 unidades surtidas Stabilo",
+    "price": 2600,
+    "discount": 10,
+    "category": 1,
+    "subcategory": "fibras",
+    "image": ["resaltador.jpg"],
+    "description": "Diseño compacto, elegante y ergonómico. Imprescindibles para todo momento."
+  },
+  {
+    "id": 6,
+    "name": "Set Resaltador Boss x5 unidades surtidas Stabilo",
+    "price": 2600,
+    "discount": 5,
+    "category": 1,
+    "subcategory": "fibras",
+    "image": ["resaltador.jpg"],
+    "description": "Diseño compacto, elegante y ergonómico. Imprescindibles para todo momento."
+  }
+
+
+]

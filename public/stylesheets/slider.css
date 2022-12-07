@@ -45,6 +45,8 @@
   display: flex;
   justify-content: flex-start;
   font-size: 15px;
+  color: var(--purple);
+  font-weight: 800;
 
 }
 
@@ -57,8 +59,8 @@
   padding: 5px;
   position: absolute;
   top: 220px;
-  right: 3px;
-  font-size: 14px;
+  right: 4px;
+  font-size: 12px;
 }
 
 .card2 .card-data2 .price2 .discount2 {
@@ -77,6 +79,7 @@
 .card2 .card-data2 .name2 {
   font-size: 12px;
   font-weight: 400;
+  padding-top: 5px;
 }
 
 .card2 .card-data2 .quotes2{

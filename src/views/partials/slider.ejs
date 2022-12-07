@@ -1,6 +1,38 @@
  <!-- Flickity 2 HTML init -->
  <div class="carousel2" data-flickity='{ "autoPlay": true }'>
-    <div class="carousel-cell">
+
+    <% products.forEach(element => { %>
+        <div class="carousel-cell">
+            <article class="card2">
+                <a href="/products/detail/<%- element.id %> ">
+                    <div class="card-image2">
+                        <img src="/images/<%- element.image  %> " alt="">
+                    </div>
+                </a>
+                <div class="card-data2">
+                    <div class="icon2">
+                       <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h5 class="name2">
+                        <% if (element.name.length > 30) { %>
+                            <%- `${element.name.slice(0,30)}...` %>
+                        <% } else { %>
+                            <%= element.name %>
+                        <% } %>
+                    </h5>
+                    <div class="price2">
+                        <p>$<%- toThousand(element.price - element.price * element.discount / 100) %></p>
+                        <p class="discount2"><%- element.discount !== 0 ? `${element.discount}% OFF` : "" %></p>
+                    </div>
+                    <!-- <p class="quotes2">6 cuotas de $660,00</p> -->
+                </div>
+            </article>
+        </div>
+     
+    <% }) %>
+
+
+  <!--   <div class="carousel-cell">
         <article class="card2">
             <a href="/products/detail">
                 <div class="card-image2">
@@ -19,131 +51,7 @@
                 <p class="quotes2">6 cuotas de $660,00</p>
             </div>
         </article>
-    </div>
+    </div> -->
     <!--  -->
-    <div class="carousel-cell">
-        <article class="card2">
-            <a href="/products/detail">
-                <div class="card-image2">
-                    <img src="/images/microfibras.jpg" alt="">
-                </div>
-            </a>
-            <div class="card-data2">
-                <div class="icon2">
-                    <i class="fas fa-truck"></i>
-                </div>
-                <h5 class="name2">Aquí va el nombre del producto etc etc etc...</h5>
-                <div class="price2">
-                    <p>$3960</p>
-                    <p class="discount2">30% off</p>
-                </div>
-                <p class="quotes2">6 cuotas de $660,00</p>
-            </div>
-        </article>
-    </div>
-
-    <div class="carousel-cell">
-        <article class="card2">
-            <a href="/products/detail">
-                <div class="card-image2">
-                    <img src="/images/mouse.jpg" alt="">
-                </div>
-            </a>
-            <div class="card-data2">
-                <div class="icon2">
-                    <i class="fas fa-truck"></i>
-                </div>
-                <h5 class="name2">Aquí va el nombre del producto etc etc etc...</h5>
-                <div class="price2">
-                    <p>$3960</p>
-                    <p class="discount2">30% off</p>
-                </div>
-                <p class="quotes2">6 cuotas de $660,00</p>
-            </div>
-        </article>
-    </div>
-
-    <div class="carousel-cell">
-        <article class="card2">
-            <a href="/products/detail">
-                <div class="card-image2">
-                    <img src="/images/resaltador.jpg" alt="">
-                </div>
-            </a>
-            <div class="card-data2">
-                <div class="icon2">
-                    <i class="fas fa-truck"></i>
-                </div>
-                <h5 class="name2">Aquí va el nombre del producto etc etc etc...</h5>
-                <div class="price2">
-                    <p>$3960</p>
-                    <p class="discount2">30% off</p>
-                </div>
-                <p class="quotes2">6 cuotas de $660,00</p>
-            </div>
-        </article>
-    </div>
-
-    <div class="carousel-cell">
-        <article class="card2">
-            <a href="/products/detail">
-                <div class="card-image2">
-                    <img src="/images/valija-escolar.jpg" alt="">
-                </div>
-            </a>
-            <div class="card-data2">
-                <div class="icon2">
-                    <i class="fas fa-truck"></i>
-                </div>
-                <h5 class="name2">Aquí va el nombre del producto etc etc etc...</h5>
-                <div class="price2">
-                    <p>$3960</p>
-                    <p class="discount2">30% off</p>
-                </div>
-                <p class="quotes2">6 cuotas de $660,00</p>
-            </div>
-        </article>
-    </div>
-
-    <div class="carousel-cell">
-        <article class="card2">
-            <a href="/products/detail">
-                <div class="card-image2">
-                    <img src="/images/cuaderno-con-espiral.jpg" alt="">
-                </div>
-            </a>
-            <div class="card-data2">
-                <div class="icon2">
-                    <i class="fas fa-truck"></i>
-                </div>
-                <h5 class="name2">Aquí va el nombre del producto etc etc etc...</h5>
-                <div class="price2">
-                    <p>$3960</p>
-                    <p class="discount2">30% off</p>
-                </div>
-                <p class="quotes2">6 cuotas de $660,00</p>
-            </div>
-        </article>
-    </div>
-
-    <div class="carousel-cell">
-        <article class="card2">
-            <a href="/products/detail">
-                <div class="card-image2">
-                    <img src="/images/cuaderno-con-espiral.jpg" alt="">
-                </div>
-            </a>
-            <div class="card-data2">
-                <div class="icon2">
-                    <i class="fas fa-truck"></i>
-                </div>
-                <h5 class="name2">Aquí va el nombre del producto etc etc etc...</h5>
-                <div class="price2">
-                    <p>$3960</p>
-                    <p class="discount2">30% off</p>
-                </div>
-                <p class="quotes2">6 cuotas de $660,00</p>
-            </div>
-        </article>
-    </div>
+    
 </div>
