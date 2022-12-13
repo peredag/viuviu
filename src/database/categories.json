@@ -1,0 +1,26 @@
+[
+    {
+        "id" : 1,
+        "name" : "Escolar",
+        "code" : "school",
+        "image": "categ-escolar.png"
+    },
+    {
+        "id" : 2,
+        "name" : "Artística",
+        "code" : "art",
+        "image": "categ-artistica.png"
+    },
+    {
+        "id" : 3,
+        "name" : "Oficina",
+        "code" : "office",
+        "image": "categ-oficina.png"
+    },
+    {
+        "id" : 4,
+        "name" : "Librería",
+        "code" : "office",
+        "image": "cat_oficina.jpg"
+    }
+]

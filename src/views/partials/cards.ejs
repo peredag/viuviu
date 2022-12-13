@@ -10,7 +10,8 @@
                 <div class="icon">
                     <i class="fa-solid fa-eye"></i>
                 </div>
-                <h5 class="name"><%- element.name  %>
+                <h5 class="name">
+                    <%- element.name  %>
                 </h5>
                 <div class="price">
                     <p>$<%- toThousand(element.price - element.price * element.discount / 100) %></p>
@@ -20,25 +21,4 @@
             </div>
         </article>
     <% }) %>
-
-    <!-- <article class="card">
-        <a href="/products/detail">
-            <div class="card-image">
-                <img src="/images/microfibras.jpg" alt="">
-            </div>
-        </a>
-        <div class="card-data">
-            <div class="icon">
-                <i class="fas fa-truck"></i>
-            </div>
-            <h5 class="name">Aquí va el nombre del producto etc etc etc...</h5>
-            <div class="price">
-                <p>$3960</p>
-                <p class="discount">30% off</p>
-            </div>
-            <p class="quotes">6 cuotas de $660,00</p>
-        </div>
-    </article> -->
-    <!-- card -->
-
 </section>

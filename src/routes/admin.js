@@ -5,6 +5,6 @@ let controller = require('../controllers/adminController')
 /* GET home page. */
 router.get('/', controller.index);
 
-router.get('/edit', controller.products);
+router.get('/products', controller.products);
 
 module.exports = router;

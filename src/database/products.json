@@ -34,8 +34,8 @@
     "name": "Mouse Óptico USB",
     "price": 1600,
     "discount": 5,
-    "category": 1,
-    "subcategory": "computacion",
+    "category": 3,
+    "subcategory": "computación",
     "image": ["mouse.jpg"],
     "description": "Diseño ergonómico, confortable, pequeño y fácil de transportar. Tamaño: 105.6x58x36.7 mm."
   },
@@ -94,8 +94,8 @@
     "name": "Mouse Óptico USB",
     "price": 1600,
     "discount": 5,
-    "category": 1,
-    "subcategory": "computacion",
+    "category": 3,
+    "subcategory": "computación",
     "image": ["mouse.jpg"],
     "description": "Diseño ergonómico, confortable, pequeño y fácil de transportar. Tamaño: 105.6x58x36.7 mm."
   },
@@ -104,7 +104,7 @@
     "name": "Set Resaltador Boss x5 unidades surtidas Stabilo",
     "price": 2600,
     "discount": 10,
-    "category": 1,
+    "category": 2,
     "subcategory": "fibras",
     "image": ["resaltador.jpg"],
     "description": "Diseño compacto, elegante y ergonómico. Imprescindibles para todo momento."
@@ -114,11 +114,39 @@
     "name": "Set Resaltador Boss x5 unidades surtidas Stabilo",
     "price": 2600,
     "discount": 5,
-    "category": 1,
+    "category": 3,
     "subcategory": "fibras",
     "image": ["resaltador.jpg"],
     "description": "Diseño compacto, elegante y ergonómico. Imprescindibles para todo momento."
+  },
+  {
+    "id": 7,
+    "name": "Microfibra Point 88 PASTEL Estuche x 8 unidades Stabilo",
+    "price": 2780,
+    "discount": 0,
+    "category": 1,
+    "subcategory": "microfibras",
+    "image": ["microfibra-point-88.jpg"],
+    "description": "Fácilmente reconocible por su diseño hexagonal rayado, ha sido un clásico atemporal desde 1977, ya sea que Usted desee dibujar, señalar, tomar notas o simplemente escribir, tiene una importante variedad para encontrar su color ideal."
+  },
+  {
+    "id": 8,
+    "name": "Microfibra Point 88 PASTEL Estuche x 8 unidades Stabilo",
+    "price": 2780,
+    "discount": 0,
+    "category": 1,
+    "subcategory": "microfibras 2",
+    "image": ["microfibra-point-88.jpg"],
+    "description": "Fácilmente reconocible por su diseño hexagonal rayado, ha sido un clásico atemporal desde 1977, ya sea que Usted desee dibujar, señalar, tomar notas o simplemente escribir, tiene una importante variedad para encontrar su color ideal."
+  },
+  {
+    "id": 7,
+    "name": "Microfibra Point 88 PASTEL Estuche x 8 unidades Stabilo",
+    "price": 2780,
+    "discount": 0,
+    "category": 1,
+    "subcategory": "microfibra",
+    "image": ["microfibra-point-88.jpg"],
+    "description": "Fácilmente reconocible por su diseño hexagonal rayado, ha sido un clásico atemporal desde 1977, ya sea que Usted desee dibujar, señalar, tomar notas o simplemente escribir, tiene una importante variedad para encontrar su color ideal."
   }
-
-
 ]

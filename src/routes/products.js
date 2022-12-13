@@ -8,6 +8,8 @@ router.get('/detail/:id', controller.detail);
 
 router.get('/list', controller.list);
 
-//router.get('/category/:id', controller.category);
+router.get('/category/:id', controller.category);
+
+
 
 module.exports = router;
