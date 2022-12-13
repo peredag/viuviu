@@ -10,6 +10,8 @@ router.get('/list', controller.list);
 
 router.get('/category/:id', controller.category);
 
+router.get('/subcategory/:subcategory/:categoryId', controller.subcategory);
 
+router.get('/search', controller.search);
 
 module.exports = router;

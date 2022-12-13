@@ -71,11 +71,10 @@
 
         <!-- Buscador escritorio -->
 
-        <form action="" class="search-form-desktop">
-            <!-- buscador va dentro de FORM para enviar informacion -->
+        <form action="/products/search" method="GET" class="search-form-desktop"> <!-- ACTION Y METHOD -->
             <div class="search-bar">
-                <input type="search" name="" id="">
-                <button type="submit"><i class="fas fa-search"></i></button>
+                <input type="search" name="keywords" ><!-- INPUT Y SU NAME -->
+                <button type="submit"><i class="fas fa-search"></i></button> <!-- BUTTON SUBMIT -->
             </div>
         </form>
 
@@ -90,9 +89,9 @@
 
         <!-- Buscador Mobile -->
 
-        <form action="" class="search-form-mobile" id="search">
+        <form action="/products/search" method="GET" class="search-form-mobile" id="search">
             <div class="search-bar">
-                <input type="search" name="" id="" placeholder="Buscar productos">
+                <input type="search" name="keywords" placeholder="Buscar productos">
                 <button type="submit"><i class="fas fa-search"></i></button>
             </div>
         </form>

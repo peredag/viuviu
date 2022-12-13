@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include('partials/head.ejs') %>
+<body>
+    <%- include('partials/header.ejs') %>
+    <main class="categories">
+        <div class="container products-container">
+            <% if (result.length > 0) { %>
+                <h2 class="subtitle">Resultados de la búsqueda de <%- search %></h2>
+                <!--  -->
+                <section class="container">
+                    <% result.forEach(element => { %>
+                        <article class="card">
+                            <a href="/products/detail/<%- element.id %> ">
+                                <div class="card-image">
+                                    <img src="/images/<%- element.image  %> " alt="">
+                                </div>
+                            </a>
+                            <div class="card-data">
+                                <div class="icon">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <h5 class="name">
+                                    <%- element.name  %>
+                                </h5>
+                                <div class="price">
+                                    <p>$<%- toThousand(element.price - element.price * element.discount / 100) %></p>
+                                    <p class="discount"><%- element.discount !== 0 ? `${element.discount}% OFF` : "" %></p>
+                                </div>
+                                <!-- <p class="quotes">6 cuotas de $660,00</p> -->
+                            </div>
+                        </article>
+                    <% }) %>
+                </section>
+
+            <% }else{%>
+                <h2 class="subtitle">No hay resultados de la búsqueda de <%- search %></h2>
+            <% } %>
+        </div>
+    </main>
+    <%- include('partials/footer.ejs')%>
+    <script src="/javascripts/categoriesSidePanel.js"></script>
+</body>
+</html>

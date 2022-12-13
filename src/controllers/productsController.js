@@ -44,6 +44,36 @@ let controller = {
         })
 
 
+    },
+    subcategory: (req, res) => {
+        let subcategoryName = req.params.subcategory.toLowerCase()
+        let categoryId = +req.params.categoryId 
+        
+        let productsSubcategories = products.filter(product => product.subcategory.toLowerCase() === subcategoryName)
+        let productsCategory = products.filter(product => +product.category === categoryId)
+        let category = categories.find(category => category.id === categoryId)
+        let subcategories = productsCategory.map(product => product.subcategory)
+        
+        let uniqueSubcategories = subcategories.filter((x, i, a) => a.indexOf(x) == i) 
+ 
+        res.render('subcategory', {
+            products: productsSubcategories,
+            category,
+            subcategories: uniqueSubcategories,
+            toThousand
+        })
+    },
+    search: (req, res) => {
+        let keywords = req.query.keywords.trim().toLowerCase()
+
+        let result = products.filter(product => product.name.toLowerCase().includes(keywords))
+        
+        res.render('searchResult', {
+            result,
+            search: keywords,
+            toThousand
+        })
+
     }
 
 
