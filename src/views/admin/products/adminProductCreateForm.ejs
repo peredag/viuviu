@@ -9,7 +9,6 @@
         <div class="row">
           <%- include('../partials/adminSidebar') %>
         <form class="col-md-9 ms-sm-auto col-lg-10 px-md-4 row p-3 justify-content-center" action="/admin/product/store" method="POST" enctype="multipart/form-data">
-            <!-- ATENCION: action="/admin/product/store" method="POST" enctype="multipart/form-data"  -->
             <div class="col-12 col-md-6">
                 <div class="col-12">
                     <label for="inputName" class="form-label">Nombre</label>
@@ -19,8 +18,8 @@
 
                 <div class="col-12">
                     <select class="form-select categorySelect" id="specificSizeSelect" name="category">
-                      <option selected hidden value="">Categorias</option> <!-- manejo de categorias con json -->
-                    <% categories.forEach(element => { %><!-- categories es el array de data base -->
+                      <option selected hidden value="">Categorias</option> 
+                    <% categories.forEach(element => { %>
                         <option value="<%- element.id %>"><%- element.name %> </option>  
                     <% }) %>
                     </select>
