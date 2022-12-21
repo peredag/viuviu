@@ -28,7 +28,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(methodOverride('_method'));
 app.use(session({           /* EXPRESS-SESSION */
-    secret: "artisticaDali",  /* PALABRA SECRETA  /* EXPRESS-SESSION */
+    /* secret: "artisticaDali",  */
+    secret: "ViuViu", /* PALABRA SECRETA  /* EXPRESS-SESSION */
     resave: false,           /* EXPRESS-SESSION */
     saveUninitialized: true  /* EXPRESS-SESSION */
 }))

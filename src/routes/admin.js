@@ -9,7 +9,7 @@ let userAdminCheck = require('../middlewares/userAdminCheck')
 
 router.get('/', controller.index);
 
-router.get('/products', userAdminCheck, controller.products);
+router.get('/products', controller.products);
 
 router.get('/product/create', controller.create);
 

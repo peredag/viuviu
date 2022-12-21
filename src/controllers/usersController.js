@@ -28,7 +28,7 @@ let controller = {
                                     
                const TIME_IN_MILISECONDS = 60000 
                    
-               res.cookie("userArtisticaDali", req.session.user, {
+               res.cookie("userViuViu", req.session.user, {
                    expires: new Date(Date.now() + TIME_IN_MILISECONDS),
                   
                    httpOnly: true, 
@@ -94,6 +94,23 @@ let controller = {
         } 
         
         
+    },
+    logout: (req, res) => {
+        req.session.destroy(); 
+
+        if(req.cookies.userViuViu){ 
+            res.cookie('userViuViu', "", { maxAge: -1 }) 
+        }
+        res.redirect('/') 
+    }, 
+    profile: (req, res) => {
+
+        let user = users.find(user => user.id === req.session.user.id) 
+
+        res.render('userProfile', { 
+            user, 
+            session: req.session  
+        }) 
     }
 
 }

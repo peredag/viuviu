@@ -13,8 +13,9 @@
         <nav class="navigation-bar" id="navigation-bar-mobile">
 
             <div class="user-icons-mobile">
-                <i class="fas fa-user"></i>
-                <i class="fas fa-shopping-cart"></i>
+                <!-- <i class="fas fa-user"></i> -->
+                <!-- <i class="fas fa-shopping-cart"></i> -->
+                
             </div>
 
             <!-- Lista con los elementos del menú (categorías) -->
@@ -32,11 +33,26 @@
                     <i class="fas fa-chevron-down"></i>
                 </li>
                 <!-- <li class="dropdown-menu"><a href="">Contacto</a></li> -->
-                <li class="dropdown-menu"><a href="/users/login">Login</a></li>
-                <li class="dropdown-menu"><a href="/users/register">Registro</a></li>
+                <!-- <li class="dropdown-menu"><a href="/users/login">Login</a></li> -->
+                <!-- <li class="dropdown-menu"><a href="/users/register">Registro</a></li> -->
                 
                 <li class="dropdown-menu"><a href="/products/list">Listado</a></li>
-                <li class="dropdown-menu"><a href="/admin/product/create">admin-crear</a></li>
+                <!-- <li class="dropdown-menu"><a href="/admin/product/create">admin-crear</a></li> -->
+                <div class="user"> 
+                    <% if (typeof session.user != "undefined") { %> 
+                        <i class="fas fa-user"></i><span class="session"></span>
+                        
+                        <div class="menu-user">
+                            <a href="/users/profile">Mis datos</a>
+                            <a href="/users/logout">Cerrar sesión</a>
+                            <% if (session.user.rol === "ROL_ADMIN") { %>
+                                <a href="/admin/products">ADMIN</a>
+                            <% } %>
+                        </div>
+                    <% } else {%> 
+                        <a href="/users/login"><i class="fas fa-user"></i></a>
+                    <% } %>                         
+                </div>
 
             </ul>
         </nav>
