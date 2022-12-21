@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
+let controller = require('../controllers/productsController');
 
-let controller = require('../controllers/productsController')
+//let userCheck = require('../middlewares/userCheck')
 
 
 router.get('/detail/:id', controller.detail);
