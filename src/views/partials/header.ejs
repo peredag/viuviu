@@ -37,20 +37,24 @@
                 <!-- <li class="dropdown-menu"><a href="/users/register">Registro</a></li> -->
                 
                 <li class="dropdown-menu"><a href="/products/list">Listado</a></li>
+                <hr>
                 <!-- <li class="dropdown-menu"><a href="/admin/product/create">admin-crear</a></li> -->
                 <div class="user"> 
                     <% if (typeof session.user != "undefined") { %> 
-                        <i class="fas fa-user"></i><span class="session"></span>
-                        
+                       <i class="fas fa-user"></i><span class="session"></span>
                         <div class="menu-user">
                             <a href="/users/profile">Mis datos</a>
-                            <a href="/users/logout">Cerrar sesión</a>
+                            <br>
+                            <!-- <a href="/users/logout">Cerrar sesión</a> -->
                             <% if (session.user.rol === "ROL_ADMIN") { %>
-                                <a href="/admin/products">ADMIN</a>
+                                <a href="/admin/products">admin productos</a>
                             <% } %>
+                            <br>
+                            <a href="/users/logout">Cerrar sesión</a>
+                            <hr>
                         </div>
                     <% } else {%> 
-                        <a href="/users/login"><i class="fas fa-user"></i></a>
+                        <a href="/users/login">Login <i class="fas fa-user"></i></a>
                     <% } %>                         
                 </div>
 
