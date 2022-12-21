@@ -32,8 +32,9 @@
                     <i class="fas fa-chevron-down"></i>
                 </li>
                 <!-- <li class="dropdown-menu"><a href="">Contacto</a></li> -->
-                <li class="dropdown-menu"><a href="/users">Registro</a></li>
                 <li class="dropdown-menu"><a href="/users/login">Login</a></li>
+                <li class="dropdown-menu"><a href="/users/register">Registro</a></li>
+                
                 <li class="dropdown-menu"><a href="/products/list">Listado</a></li>
                 <li class="dropdown-menu"><a href="/admin/product/create">admin-crear</a></li>
 
@@ -79,11 +80,25 @@
             </div>
         </form>
 
-        <!-- Iconos de usuario escritorio -->
-        <div class="user-icons-desktop">
-            <i class="fas fa-user"></i>
-            <i class="fas fa-shopping-cart"></i>
-        </div>
+               <!-- Iconos de usuario escritorio -->
+            <div class="user-icons-desktop">
+                <div class="user"> 
+                    <% if (typeof session.user != "undefined") { %> 
+                        <i class="fas fa-user"></i><span class="session"></span>
+                        <div class="menu-user">
+                            <a href="/users/profile">Mis datos</a>
+                            <a href="/users/logout">Cerrar sesión</a>
+                            <% if (session.user.rol === "ROL_ADMIN") { %>
+                                <a href="/admin/products">ADMIN</a>
+                            <% } %>
+                        </div>
+                    <% } else {%> 
+                        <a href="/users/login"><i class="fas fa-user"></i></a>
+                    <% } %>                         
+                </div>
+                <a href="/"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+   
 
     </div>
     <nav class="nav_menu">
@@ -138,3 +153,8 @@
 
     </nav>
 </header>
+
+<% if (typeof session.user !== "undefined") { %>
+   
+    <h2> Bienvenid@ <%= session.user.name %> !</h2>
+<% } %>

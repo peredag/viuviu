@@ -14,6 +14,7 @@ let controller = {
 
         res.render('productDetail', {
             product,
+            session: req.session,
            // relatedProducts,
             toThousand
         })
@@ -21,6 +22,7 @@ let controller = {
     list: (req, res) =>{
         res.render('productList', {
             products,
+            session: req.session,
             toThousand
         })
     },
@@ -38,8 +40,9 @@ let controller = {
 
         res.render('categories', {
             products: productsCategory,
-            category, // para que la vista muestre la imagen del banner
+            category, 
             subcategories: uniqueSubcategories,
+            session: req.session,
             toThousand
         })
 
@@ -60,6 +63,7 @@ let controller = {
             products: productsSubcategories,
             category,
             subcategories: uniqueSubcategories,
+            session: req.session,
             toThousand
         })
     },
@@ -71,6 +75,7 @@ let controller = {
         res.render('searchResult', {
             result,
             search: keywords,
+            session: req.session,
             toThousand
         })
 

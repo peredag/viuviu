@@ -7,18 +7,21 @@ let uniqueSubcategories = subcategories.filter((x, i, a) => a.indexOf(x) == i)
 let controller = {
     index: (req, res) =>{
         res.render('admin/adminIndex', {
+            session: req.session,
         })
     },
     products: (req, res) => {
         //res.send(products)
         res.render('admin/products/adminProducts', {
-            products
+            products,
+            session: req.session,
         })
     },
     create: (req, res) => {
         res.render('admin/products/adminProductCreateForm', {
             categories, 
-            subcategories: uniqueSubcategories//
+            subcategories: uniqueSubcategories,//
+            session: req.session,
         })
     },
     store: (req, res) => {
@@ -56,7 +59,8 @@ let controller = {
         res.render('admin/products/adminProductEditForm', { 
             product, 
             categories, 
-            subcategories: uniqueSubcategories
+            subcategories: uniqueSubcategories,
+            session: req.session,
         })
     },
     update: (req, res) => {

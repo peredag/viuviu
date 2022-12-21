@@ -10,20 +10,26 @@
        
         <h3 class="userTitle">LOGIN</h3>
         <form action="/users/login" method="POST" class="form-ad">
-            <div class="form-ad-input">
+            <div class="form-ad-input">  
                 <input type="email" name="email" placeholder="Ingresá tu email">
-                    <small class="text-danger">Ingresa un email válido </small>
-                
+                <% if (locals.errors && errors.email) { %>  
+                    <small class="text-danger"> <%= errors.email.msg %>  </small> 
+                <% } %>
             </div>
-            <div class="form-ad-input">
+            <div class="form-ad-input">  
                 <input type="password" name="pass" placeholder="Contraseña">
-                <small class="text-danger">Ingresa tu contraseña</small>
+                <% if (locals.errors && errors.pass) { %>
+                    <small class="text-danger"> <%= errors.pass.msg %>  </small>
+                <% } %>
             </div>
             <div class="form-ad-input_check">
-                <input type="checkbox" name="remember" id="check">
+                <input type="checkbox" name="remember" id="check"> 
                 <label for="check">Recordar</label>
             </div>
-            <small class="text-danger">Credenciales inválidas</small>
+            
+            <% if (locals.errors && errors.custom) { %> 
+                <small class="text-danger"> <%= errors.custom.msg %>  </small>  
+            <% } %>                                                  
             <button type="submit" class="btn btn-ad-primary">
                 INGRESAR
             </button>
@@ -33,7 +39,7 @@
 
     <%- include('partials/footer.ejs') %>
 
-    <script src="/javascripts/header.js"></script>
+
 </body>
 
 </html>
